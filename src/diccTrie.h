@@ -27,18 +27,14 @@ public:
     //define el significado
     void definir(const string &key, const T& siginificado);
 
+    void definirporPuntero(const string &key, T* significado);
+
     //devuelve true sii la clave tiene una definicion en el diccionario
     bool definido(const string &key) const;
 
     // devuelve el significado de la clave pasada por parametro en el dicc
     // Pre: la clave esta definida
-    T& obtener(const string& key);
-
-    struct par{
-        string _clave;
-        T _dato;
-        par(string &c, T &d) : _clave(c),  _dato(d){};
-    };
+    T& obtener(const string& key) const;
 
 private:
     struct Nodo{
@@ -71,6 +67,7 @@ private:
         }
         delete punt;
     }
+};
 /*
  Realmente no hay razon para que este
 public:
@@ -98,7 +95,6 @@ public:
         std::set<string>::iterator _itClave;
     };
     */
-};
 
 
 #endif //SOLUCION_DICCTRIE_H

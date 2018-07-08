@@ -1,3 +1,5 @@
+
+
 #include "Instruccion.h"
 
 void Instruccion::IPUSH(int valor){
@@ -54,3 +56,5 @@ Id Instruccion::nombreRutina()const{
 Id Instruccion::nombreVariable() const {
     return nombre;
 }
+
+

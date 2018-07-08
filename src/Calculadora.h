@@ -21,23 +21,23 @@ public:
 
     ~Calculadora();
 
-    bool ejecutando();
+    bool ejecutando()const;
 
     void ejecutarUnPaso();
 
     void asignarVariable(Variable, int);
 
-    int valorHistoricoVariable(Variable,instante);
+    int valorHistoricoVariable(Variable,instante)const;
 
-    int valorActualVariable(Variable);
+    int valorActualVariable(Variable)const;
 
     int IndiceInstruccionActual();
 
-    instante InstanteActual();
+    instante InstanteActual()const;
 
     rut rutinaActual();
 
-    stack<int> Pila();
+    stack<int> Pila()const;
 
 private:
     instante momentoActual;

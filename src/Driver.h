@@ -2,7 +2,7 @@
 #define DRIVER_CALCULADORA_H
 
 #include <string>
-
+#include "Calculadora.hpp"
 using namespace std;
 
 class Driver {
@@ -31,9 +31,12 @@ public:
 	int valorVariable(string idVariable) const;
 	int valorHistoricoVariable(string idVariable, int t) const;
 	int instanteActual() const;
-
+	//Programa p;
 private:
-	// COMPLETAR
+	Programa p;
+	Calculadora c;
+	tuple<string, vector<Instruccion>, bool> r;
+
 };
 
 #endif

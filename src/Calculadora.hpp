@@ -1,3 +1,6 @@
+
+
+
 #include "Calculadora.h"
 
 
@@ -25,8 +28,9 @@ void Calculadora::nuevaCalculadora(Programa prog, rut r, int W) {
             }
             if ((get<0>(*itInstr)).OP() == OWRITE || (get<0>(*itInstr)).OP() == OREAD) {
                 if (!varVentana.definido(get<0>(*itInstr).nombreVariable())) {
-                    Ventana<tuple<int, int>> v(W);
-                    varVentana.definir((get<0>(*itInstr)).nombreVariable(), v);
+                    Ventana<tuple<int,int>>* v = new Ventana<tuple<int,int>>(W);
+                    varVentana.definirporPuntero((get<0>(*itInstr)).nombreVariable(),v);
+                    v=NULL;
                 }
                 //Porque necesita de la funcion obtener referencia, no tengo idea.
                 Ventana<tuple<int,int>>* ptrVentana = &varVentana.obtener((get<0>(*itInstr)).nombreVariable());
@@ -54,7 +58,7 @@ Calculadora::~Calculadora(){
 }
 
 
-bool Calculadora::ejecutando() {
+bool Calculadora::ejecutando()const {
     if (indiceRutinaActual > 0 && indiceInstruccion < (get<2>(progCalc[indiceRutinaActual])))
     return true;
     else
@@ -64,7 +68,7 @@ bool Calculadora::ejecutando() {
 void Calculadora::ejecutarUnPaso() {
     bool nojump = true;
     if (get<0>(*itaInstruccion).OP() == OADD) {
-        if (pila.size() == 0)
+        if (pila.empty())
             pila.push(0);
         else if (pila.size() >= 2) {
             int a = pila.top();
@@ -72,7 +76,7 @@ void Calculadora::ejecutarUnPaso() {
             pila.top() = pila.top() + a;
         }
     } else if ((get<0>(*itaInstruccion).OP() == OMUL)) {
-        if (pila.size() == 0)
+        if (pila.empty())
             pila.push(0);
         else if (pila.size() >= 2) {
             int a = pila.top();
@@ -83,7 +87,7 @@ void Calculadora::ejecutarUnPaso() {
             pila.push(0);
         }
     } else if ((get<0>(*itaInstruccion).OP() == OSUB)) {
-        if (pila.size() == 0)
+        if (pila.empty())
             pila.push(0);
         else if (pila.size() >= 2) {
             int a = pila.top();
@@ -105,10 +109,10 @@ void Calculadora::ejecutarUnPaso() {
         indiceInstruccion = 0;
     } else if ((get<0>(*itaInstruccion).OP() == OJUMPZ)) {
         nojump = false;
-        if (pila.size() == 0 || pila.top() == 0) {
+        if (pila.empty() || pila.top() == 0) {
             indiceRutinaActual = get<1>(*itaInstruccion);
             indiceInstruccion = 0;
-            if(pila.size()!=0)
+            if(!pila.empty())
                 pila.pop();
         }
     }
@@ -121,7 +125,7 @@ int Calculadora::IndiceInstruccionActual() {
     return indiceInstruccion;
 }
 
-instante Calculadora::InstanteActual() {
+instante Calculadora::InstanteActual()const {
     return momentoActual;
 }
 
@@ -129,7 +133,7 @@ rut Calculadora::rutinaActual() {
     return get<0>(progCalc[indiceRutinaActual]);
 }
 
-stack<int> Calculadora::Pila() {
+stack<int> Calculadora::Pila()const {
     return pila;
 }
 
@@ -137,15 +141,17 @@ void Calculadora::asignarVariable(Variable v, int n) {
     asignaciones.push_back(make_tuple(momentoActual, v, n));
     cantidadAsignaciones++;
     if (varVentana.definido(v)) {
-        Ventana<tuple<int, int>> nuevaVentana = varVentana.obtener(v);
-        nuevaVentana.registrar(make_tuple(momentoActual, n));
-        varVentana.definir(v, nuevaVentana);
+        Ventana<tuple<int,int>>* nuevaVentana = new Ventana<tuple<int,int>> (capacidadVentana);
+        *nuevaVentana = varVentana.obtener(v);
+        (*nuevaVentana).registrar(make_tuple(momentoActual, n));
+        varVentana.definirporPuntero(v, nuevaVentana);
+        nuevaVentana=NULL;
     } else {
         varAsignacionActual.definir(v, n);
     }
 }
 
-int Calculadora::valorHistoricoVariable(Variable v, instante i) {
+int Calculadora::valorHistoricoVariable(Variable v, instante i)const {
     if(varVentana.definido(v)){
         int l=0;
         int r=capacidadVentana-1;
@@ -164,7 +170,7 @@ int Calculadora::valorHistoricoVariable(Variable v, instante i) {
             nc.nuevaCalculadora(get<0>(inicio), get<1>(inicio), capacidadVentana);
             int j = 0;
             int a = 0;
-            list<tuple<int ,Variable, instante>>::iterator itAsignaciones=asignaciones.begin();
+            list<tuple<int ,Variable, instante>>::const_iterator itAsignaciones=asignaciones.begin();
             while (j <= i) {
                 if (cantidadAsignaciones > a && get<0>(*itAsignaciones)==i){
                     nc.asignarVariable(get<1>(*itAsignaciones),get<2>(*itAsignaciones));
@@ -184,7 +190,7 @@ int Calculadora::valorHistoricoVariable(Variable v, instante i) {
             nc.nuevaCalculadora(get<0>(inicio), get<1>(inicio), capacidadVentana);
             int j=0;
             int res=0;
-            list<tuple<int ,Variable, instante>>::iterator itAsignaciones=asignaciones.begin();
+            list<tuple<int ,Variable, instante>>::const_iterator itAsignaciones=asignaciones.begin();
             while(j<cantidadAsignaciones){
                 if(get<1>(*itAsignaciones)==v){
                     if(get<2>(*itAsignaciones)<=i)
@@ -198,7 +204,7 @@ int Calculadora::valorHistoricoVariable(Variable v, instante i) {
     }
 }
 
-int Calculadora::valorActualVariable(Variable v) {
+int Calculadora::valorActualVariable(Variable v)const {
     if (varVentana.definido(v)) {
         Ventana<tuple<int, int>> ventana = varVentana.obtener(v);
         if (ventana.tam() != 0)
@@ -208,3 +214,5 @@ int Calculadora::valorActualVariable(Variable v) {
     } else
         return varAsignacionActual.obtener(v);
 }
+
+
