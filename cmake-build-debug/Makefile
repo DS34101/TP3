@@ -330,6 +330,33 @@ tests/test_instruccion.cpp.s:
 	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/tests/test_instruccion.cpp.s
 .PHONY : tests/test_instruccion.cpp.s
 
+tests/test_programa.o: tests/test_programa.cpp.o
+
+.PHONY : tests/test_programa.o
+
+# target to build an object file
+tests/test_programa.cpp.o:
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/tests/test_programa.cpp.o
+.PHONY : tests/test_programa.cpp.o
+
+tests/test_programa.i: tests/test_programa.cpp.i
+
+.PHONY : tests/test_programa.i
+
+# target to preprocess a source file
+tests/test_programa.cpp.i:
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/tests/test_programa.cpp.i
+.PHONY : tests/test_programa.cpp.i
+
+tests/test_programa.s: tests/test_programa.cpp.s
+
+.PHONY : tests/test_programa.s
+
+# target to generate assembly for a file
+tests/test_programa.cpp.s:
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/tests/test_programa.cpp.s
+.PHONY : tests/test_programa.cpp.s
+
 tests/test_ventana.o: tests/test_ventana.cpp.o
 
 .PHONY : tests/test_ventana.o
@@ -387,6 +414,9 @@ help:
 	@echo "... tests/test_instruccion.o"
 	@echo "... tests/test_instruccion.i"
 	@echo "... tests/test_instruccion.s"
+	@echo "... tests/test_programa.o"
+	@echo "... tests/test_programa.i"
+	@echo "... tests/test_programa.s"
 	@echo "... tests/test_ventana.o"
 	@echo "... tests/test_ventana.i"
 	@echo "... tests/test_ventana.s"

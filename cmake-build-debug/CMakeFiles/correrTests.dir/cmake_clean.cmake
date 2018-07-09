@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/correrTests.dir/tests/test_diccTrie.cpp.o"
   "CMakeFiles/correrTests.dir/tests/test_driver.cpp.o"
   "CMakeFiles/correrTests.dir/tests/test_instruccion.cpp.o"
+  "CMakeFiles/correrTests.dir/tests/test_programa.cpp.o"
   "CMakeFiles/correrTests.dir/tests/test_ventana.cpp.o"
   "CMakeFiles/correrTests.dir/src/Driver.cpp.o"
   "correrTests.pdb"

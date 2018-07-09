@@ -105,6 +105,33 @@ CMakeFiles/correrTests.dir/tests/test_instruccion.cpp.o: ../src/Instruccion.h
 CMakeFiles/correrTests.dir/tests/test_instruccion.cpp.o: ../src/Instruccion.hpp
 CMakeFiles/correrTests.dir/tests/test_instruccion.cpp.o: ../tests/test_instruccion.cpp
 
+CMakeFiles/correrTests.dir/tests/test_programa.cpp.o: ../tests/google-test/include/gtest/gtest-death-test.h
+CMakeFiles/correrTests.dir/tests/test_programa.cpp.o: ../tests/google-test/include/gtest/gtest-message.h
+CMakeFiles/correrTests.dir/tests/test_programa.cpp.o: ../tests/google-test/include/gtest/gtest-param-test.h
+CMakeFiles/correrTests.dir/tests/test_programa.cpp.o: ../tests/google-test/include/gtest/gtest-printers.h
+CMakeFiles/correrTests.dir/tests/test_programa.cpp.o: ../tests/google-test/include/gtest/gtest-test-part.h
+CMakeFiles/correrTests.dir/tests/test_programa.cpp.o: ../tests/google-test/include/gtest/gtest-typed-test.h
+CMakeFiles/correrTests.dir/tests/test_programa.cpp.o: ../tests/google-test/include/gtest/gtest.h
+CMakeFiles/correrTests.dir/tests/test_programa.cpp.o: ../tests/google-test/include/gtest/gtest_pred_impl.h
+CMakeFiles/correrTests.dir/tests/test_programa.cpp.o: ../tests/google-test/include/gtest/gtest_prod.h
+CMakeFiles/correrTests.dir/tests/test_programa.cpp.o: ../tests/google-test/include/gtest/internal/custom/gtest-port.h
+CMakeFiles/correrTests.dir/tests/test_programa.cpp.o: ../tests/google-test/include/gtest/internal/custom/gtest-printers.h
+CMakeFiles/correrTests.dir/tests/test_programa.cpp.o: ../tests/google-test/include/gtest/internal/gtest-death-test-internal.h
+CMakeFiles/correrTests.dir/tests/test_programa.cpp.o: ../tests/google-test/include/gtest/internal/gtest-filepath.h
+CMakeFiles/correrTests.dir/tests/test_programa.cpp.o: ../tests/google-test/include/gtest/internal/gtest-internal.h
+CMakeFiles/correrTests.dir/tests/test_programa.cpp.o: ../tests/google-test/include/gtest/internal/gtest-linked_ptr.h
+CMakeFiles/correrTests.dir/tests/test_programa.cpp.o: ../tests/google-test/include/gtest/internal/gtest-param-util-generated.h
+CMakeFiles/correrTests.dir/tests/test_programa.cpp.o: ../tests/google-test/include/gtest/internal/gtest-param-util.h
+CMakeFiles/correrTests.dir/tests/test_programa.cpp.o: ../tests/google-test/include/gtest/internal/gtest-port-arch.h
+CMakeFiles/correrTests.dir/tests/test_programa.cpp.o: ../tests/google-test/include/gtest/internal/gtest-port.h
+CMakeFiles/correrTests.dir/tests/test_programa.cpp.o: ../tests/google-test/include/gtest/internal/gtest-string.h
+CMakeFiles/correrTests.dir/tests/test_programa.cpp.o: ../tests/google-test/include/gtest/internal/gtest-tuple.h
+CMakeFiles/correrTests.dir/tests/test_programa.cpp.o: ../tests/google-test/include/gtest/internal/gtest-type-util.h
+CMakeFiles/correrTests.dir/tests/test_programa.cpp.o: ../src/Instruccion.h
+CMakeFiles/correrTests.dir/tests/test_programa.cpp.o: ../src/Programa.h
+CMakeFiles/correrTests.dir/tests/test_programa.cpp.o: ../src/Programa.hpp
+CMakeFiles/correrTests.dir/tests/test_programa.cpp.o: ../tests/test_programa.cpp
+
 CMakeFiles/correrTests.dir/tests/test_ventana.cpp.o: ../tests/google-test/include/gtest/gtest-death-test.h
 CMakeFiles/correrTests.dir/tests/test_ventana.cpp.o: ../tests/google-test/include/gtest/gtest-message.h
 CMakeFiles/correrTests.dir/tests/test_ventana.cpp.o: ../tests/google-test/include/gtest/gtest-param-test.h
