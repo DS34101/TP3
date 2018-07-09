@@ -1,11 +1,14 @@
 #include "Driver.h"
 
 Driver::Driver() {
-	// COMPLETAR
+    // COMPLETAR
+    c = new Calculadora;
+    p = new Programa;
 }
-
 Driver::~Driver() {
 	// COMPLETAR
+    /*delete c;
+    delete p;*/
 }
 
 // Operaciones para agregar instrucciones
@@ -16,7 +19,7 @@ void Driver::begin(string rutina) {
 
 void Driver::end(string rutina) {
     for (int i = 0; i < get<1>(r).size(); i++) {
-        p.AgInstruccion(rutina,get<1>(r)[i]);
+        (*p).AgInstruccion(rutina,get<1>(r)[i]);
     }
     get<1>(r).clear();
 }
@@ -74,12 +77,12 @@ void Driver::jumpz(string rutina) {
 
 void Driver::comenzarEjecucion(string rutina, int capacidadVentana) {
 
-    c.nuevaCalculadora(p,rutina, capacidadVentana);
+    (*c).nuevaCalculadora((*p),rutina, capacidadVentana);
 
 }
 
 void Driver::asignarVariable(string x, int valor) {
-	c.asignarVariable(x, valor);
+    (*c).asignarVariable(x, valor);
 }
 
 bool Driver::ejecucionFinalizada() const {
@@ -91,28 +94,31 @@ bool Driver::ejecucionFinalizada() const {
         termino = false;
     }
     return termino; */
-    return (c.ejecutando());
+    return !((*c).ejecutando());
 }
 
 void Driver::ejecutarInstruccionActual() {
 
-    c.ejecutarUnPaso();
+    (*c).ejecutarUnPaso();
 }
 
-int Driver::topePila() const {
-    return c.Pila().top();
+int Driver::topePila() const{
+    if ((*c).Pila().empty())
+        return 0;
+    else
+        return (*c).Pila().top();
 }
 
 int Driver::valorVariable(string x) const {
-    return c.valorActualVariable(x);
+    return (*c).valorActualVariable(x);
 
 }
 
 int Driver::valorHistoricoVariable(string x, int t) const {
-    return c.valorHistoricoVariable(x,t);
+    return (*c).valorHistoricoVariable(x,t);
 }
 
 int Driver::instanteActual() const {
-    return c.InstanteActual();
+    return (*c).InstanteActual();
 }
 

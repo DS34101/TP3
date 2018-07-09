@@ -1,8 +1,8 @@
  //
 // Created by dn-01 on 28/06/18.
 //
-#ifndef TP3_INSTRUCCION_H
-#define TP3_INSTRUCCION_H
+#ifndef INSTRUCCION_H_
+#define INSTRUCCION_H_
 
 #include <stack>
 #include <string>
@@ -28,7 +28,7 @@ typedef std::string Id;
 
 class Instruccion {
 public:
-
+    Instruccion();
     void IPUSH(int);
 
     void IADD();
@@ -60,4 +60,5 @@ private:
     // COMPLETAR
 };
 
-#endif //TP3_INSTRUCCION_H
+
+#endif //SOLUCION_INSTRUCCION_H

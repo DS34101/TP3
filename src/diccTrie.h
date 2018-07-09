@@ -34,7 +34,13 @@ public:
 
     // devuelve el significado de la clave pasada por parametro en el dicc
     // Pre: la clave esta definida
-    T& obtener(const string& key) const;
+    T& obtener(const string& key)const;
+
+    struct par{
+        string _clave;
+        T _dato;
+        par(string &c, T &d) : _clave(c),  _dato(d){};
+    };
 
 private:
     struct Nodo{
@@ -67,7 +73,6 @@ private:
         }
         delete punt;
     }
-};
 /*
  Realmente no hay razon para que este
 public:
@@ -95,6 +100,7 @@ public:
         std::set<string>::iterator _itClave;
     };
     */
+};
 
 
 #endif //SOLUCION_DICCTRIE_H

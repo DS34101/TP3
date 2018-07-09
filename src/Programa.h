@@ -1,15 +1,11 @@
-//
-// Created by dn-01 on 01/07/18.
-//
-
-#ifndef SOLUCION_PROGRAMA_H
-#define SOLUCION_PROGRAMA_H
+#ifndef PROGRAMA_H_
+#define PROGRAMA_H_
 
 #include <vector>
 #include <tuple>
 #include <string>
 #include <list>
-#include "Instruccion.hpp"
+#include "Instruccion.h"
 using namespace std;
 
 
@@ -25,7 +21,7 @@ public:
 
     void AgInstruccion(string,Instruccion);
     vector<string> Rutinas() const;
-    int longitud(string ) const ;
+    int longitud(string) const ;
     Instruccion Instrucciones(string , int) const;
     list <tuple<string,vector< tuple<Instruccion,int> >  ,int> > ParaCalculadora();
 
@@ -45,12 +41,15 @@ private:
 
     };
     vector<Rutina*> ListaProg;
-    vector<tuple<Id,vector<tuple<Instruccion,int>*>>> AunNoExistentes;
+
+    vector<tuple<string,tuple<Instruccion,int>* > > ParaAgregar;
     int cantRutina;
 
+    void SandDAUX(string);
     void AgregarAunNoExiste(Instruccion,int);
     void BuscarEnAunNoExiste(Id, int);
 
 };
+
 
 #endif //SOLUCION_PROGRAMA_H

@@ -1,8 +1,8 @@
 #ifndef DRIVER_CALCULADORA_H
 #define DRIVER_CALCULADORA_H
 
-#include <string>
-#include "Calculadora.hpp"
+
+#include "Calculadora.h"
 using namespace std;
 
 class Driver {
@@ -33,8 +33,8 @@ public:
 	int instanteActual() const;
 	//Programa p;
 private:
-	Programa p;
-	Calculadora c;
+	Programa* p;
+	Calculadora* c;
 	tuple<string, vector<Instruccion>, bool> r;
 
 };

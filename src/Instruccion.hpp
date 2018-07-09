@@ -1,6 +1,6 @@
-
-
 #include "Instruccion.h"
+
+Instruccion::Instruccion():_valor(),operacion(),nombre(){}
 
 void Instruccion::IPUSH(int valor){
     operacion=OPUSH;
@@ -56,5 +56,3 @@ Id Instruccion::nombreRutina()const{
 Id Instruccion::nombreVariable() const {
     return nombre;
 }
-
-
