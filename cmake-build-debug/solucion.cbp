@@ -8,83 +8,83 @@
 		<Option virtualFolders="CMake Files\;CMake Files\tests\;CMake Files\tests\google-test\;CMake Files\tests\google-test\cmake\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/cmake-build-debug"/>
+				<Option working_dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/strip">
-				<Option working_dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/cmake-build-debug"/>
+				<Option working_dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/local">
-				<Option working_dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/cmake-build-debug"/>
+				<Option working_dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install">
-				<Option working_dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/cmake-build-debug"/>
+				<Option working_dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="list_install_components">
-				<Option working_dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/cmake-build-debug"/>
+				<Option working_dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/cmake-build-debug"/>
+				<Option working_dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/cmake-build-debug"/>
+				<Option working_dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="correrTests">
-				<Option output="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/cmake-build-debug/correrTests" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/cmake-build-debug"/>
+				<Option output="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/cmake-build-debug/correrTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/tests/google-test/include"/>
+					<Add directory="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/tests/google-test/include"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -95,20 +95,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 correrTests"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 correrTests"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="correrTests/fast">
-				<Option output="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/cmake-build-debug/correrTests" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/cmake-build-debug"/>
+				<Option output="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/cmake-build-debug/correrTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/tests/google-test/include"/>
+					<Add directory="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/tests/google-test/include"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -119,21 +119,21 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 correrTests/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 correrTests/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest_main">
-				<Option output="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/cmake-build-debug/tests/google-test/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/cmake-build-debug/tests/google-test"/>
+				<Option output="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/cmake-build-debug/tests/google-test/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/cmake-build-debug/tests/google-test"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/tests/google-test/include"/>
-					<Add directory="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/tests/google-test"/>
+					<Add directory="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/tests/google-test/include"/>
+					<Add directory="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/tests/google-test"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -144,21 +144,21 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 gtest_main"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest_main/fast">
-				<Option output="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/cmake-build-debug/tests/google-test/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/cmake-build-debug/tests/google-test"/>
+				<Option output="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/cmake-build-debug/tests/google-test/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/cmake-build-debug/tests/google-test"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/tests/google-test/include"/>
-					<Add directory="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/tests/google-test"/>
+					<Add directory="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/tests/google-test/include"/>
+					<Add directory="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/tests/google-test"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -169,21 +169,21 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest">
-				<Option output="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/cmake-build-debug/tests/google-test/libgtest.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/cmake-build-debug/tests/google-test"/>
+				<Option output="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/cmake-build-debug/tests/google-test/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/cmake-build-debug/tests/google-test"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/tests/google-test/include"/>
-					<Add directory="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/tests/google-test"/>
+					<Add directory="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/tests/google-test/include"/>
+					<Add directory="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/tests/google-test"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -194,21 +194,21 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 gtest"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest/fast">
-				<Option output="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/cmake-build-debug/tests/google-test/libgtest.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/cmake-build-debug/tests/google-test"/>
+				<Option output="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/cmake-build-debug/tests/google-test/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/cmake-build-debug/tests/google-test"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/tests/google-test/include"/>
-					<Add directory="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/tests/google-test"/>
+					<Add directory="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/tests/google-test/include"/>
+					<Add directory="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/tests/google-test"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -219,83 +219,83 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 gtest/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/tp3/alumnos/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dn-01/Escritorio/Algoritmo\ y\ Estructura\ de\ datos\ II/Trabajos\ Prácticos/TP3/TP3\ REPOSITORIO/TP3/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/src/Calculadora.h">
+		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Calculadora.h">
 			<Option target="correrTests"/>
 		</Unit>
-		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/src/Calculadora.hpp">
+		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Calculadora.hpp">
 			<Option target="correrTests"/>
 		</Unit>
-		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/src/Driver.cpp">
+		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Driver.cpp">
 			<Option target="correrTests"/>
 		</Unit>
-		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/src/Driver.h">
+		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Driver.h">
 			<Option target="correrTests"/>
 		</Unit>
-		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/src/Instruccion.h">
+		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Instruccion.h">
 			<Option target="correrTests"/>
 		</Unit>
-		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/src/Instruccion.hpp">
+		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Instruccion.hpp">
 			<Option target="correrTests"/>
 		</Unit>
-		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/src/Programa.h">
+		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Programa.h">
 			<Option target="correrTests"/>
 		</Unit>
-		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/src/Programa.hpp">
+		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Programa.hpp">
 			<Option target="correrTests"/>
 		</Unit>
-		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/src/Ventana.h">
+		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Ventana.h">
 			<Option target="correrTests"/>
 		</Unit>
-		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/src/Ventana.hpp">
+		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Ventana.hpp">
 			<Option target="correrTests"/>
 		</Unit>
-		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/src/diccTrie.h">
+		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/diccTrie.h">
 			<Option target="correrTests"/>
 		</Unit>
-		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/src/diccTrie.hpp">
+		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/diccTrie.hpp">
 			<Option target="correrTests"/>
 		</Unit>
-		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/tests/google-test/src/gtest-all.cc">
+		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/tests/google-test/src/gtest-all.cc">
 			<Option target="gtest"/>
 		</Unit>
-		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/tests/google-test/src/gtest_main.cc">
+		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/tests/google-test/src/gtest_main.cc">
 			<Option target="gtest_main"/>
 		</Unit>
-		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/tests/test_calculadora.cpp">
+		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/tests/test_calculadora.cpp">
 			<Option target="correrTests"/>
 		</Unit>
-		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/tests/test_diccTrie.cpp">
+		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/tests/test_diccTrie.cpp">
 			<Option target="correrTests"/>
 		</Unit>
-		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/tests/test_driver.cpp">
+		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/tests/test_driver.cpp">
 			<Option target="correrTests"/>
 		</Unit>
-		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/tests/test_instruccion.cpp">
+		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/tests/test_instruccion.cpp">
 			<Option target="correrTests"/>
 		</Unit>
-		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/tests/test_ventana.cpp">
+		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/tests/test_ventana.cpp">
 			<Option target="correrTests"/>
 		</Unit>
-		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/CMakeLists.txt">
+		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/tests/google-test/CMakeLists.txt">
+		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/tests/google-test/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\google-test\"/>
 		</Unit>
-		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/tests/google-test/CMakeLists.txt">
+		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/tests/google-test/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\google-test\"/>
 		</Unit>
-		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/tests/google-test/cmake/internal_utils.cmake">
+		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/tests/google-test/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\tests\google-test\cmake\"/>
 		</Unit>
-		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/tp3/alumnos/tests/google-test/cmake/internal_utils.cmake">
+		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/tests/google-test/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\tests\google-test\cmake\"/>
 		</Unit>
 	</Project>
