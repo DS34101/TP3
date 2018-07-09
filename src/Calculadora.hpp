@@ -97,11 +97,13 @@ void Calculadora::ejecutarUnPaso() {
     } else if ((get<0>(*itaInstruccion).OP() == OPUSH)) {
         pila.push(get<0>(*itaInstruccion).ConstanteNumerica());
     } else if ((get<0>(*itaInstruccion).OP() == OREAD)) {
-        int ult = (*get<2>(*itaInstruccion)).tam() - 1;
-        if (ult != 0)
+        int ult = (*get<2>(*itaInstruccion)).tam();
+        if (ult == 0)
             pila.push(0);
-        else
+        else {
+            ult = ult -1;
             pila.push(get<1>((*get<2>(*itaInstruccion)).operator[](ult)));
+        }
     } else if ((get<0>(*itaInstruccion).OP() == OWRITE)) {
         if (pila.empty())
             (*get<2>(*itaInstruccion)).registrar(make_tuple(momentoActual, 0));
@@ -112,12 +114,15 @@ void Calculadora::ejecutarUnPaso() {
     } else if ((get<0>(*itaInstruccion).OP() == OJUMP)) {
         nojump = false;
         indiceRutinaActual = get<1>(*itaInstruccion);
+        itaInstruccion=get<1>(progCalc[indiceRutinaActual]).begin();
         indiceInstruccion = 0;
+
     } else if ((get<0>(*itaInstruccion).OP() == OJUMPZ)) {
-        nojump = false;
         if (pila.empty() || pila.top() == 0) {
+            nojump = false;
             indiceRutinaActual = get<1>(*itaInstruccion);
             indiceInstruccion = 0;
+            itaInstruccion=get<1>(progCalc[indiceRutinaActual]).begin();
             if (!pila.empty())
                 pila.pop();
         }
@@ -162,15 +167,16 @@ int Calculadora::valorHistoricoVariable(Variable v, instante i) const {
             int l = 0;
             int r = varVentana.obtener(v).tam()-1;
             if (i >= get<0>(varVentana.obtener(v).operator[](l))) {
-                while (get<0>(varVentana.obtener(v).operator[](l)) < (get<0>(varVentana.obtener(v).operator[](r)))) {
-                    int m = l + (r - l) / 2;
-                    if (get<0>(varVentana.obtener(v).operator[](m)) <= i) {
-                        l = m;
-                    } else {
-                        r = m;
-                    }
+                while(l < r){
+                    int m = l + (r-l)/2;
+                    if (get<0>(varVentana.obtener(v)[l]) <= i && get<0>(varVentana.obtener(v)[l+1]) > i)
+                        return get<1>(varVentana.obtener(v)[l]);
+                    if (get<0>(varVentana.obtener(v)[l]) < i)
+                        l = m + 1;
+                    else
+                        r = m - 1;
                 }
-                return get<1>(varVentana.obtener(v).operator[](l));
+                return get<1>(varVentana.obtener(v)[l]);
             } else {
             /*    Programa progAUX;
                 for (int k = 0; k < progCalc.size(); ++k) {
@@ -186,7 +192,7 @@ int Calculadora::valorHistoricoVariable(Variable v, instante i) const {
                 int a = 0;
                 list<tuple<int, Variable, instante>>::const_iterator itAsignaciones = asignaciones.begin();
                 while (j <= i) {
-                    if (cantidadAsignaciones > a && get<2>(*itAsignaciones) == i) {
+                    while (cantidadAsignaciones > a && get<2>(*itAsignaciones) <= j) {
                         (*nc).asignarVariable(get<1>(*itAsignaciones), get<0>(*itAsignaciones));
                         a++;
                         itAsignaciones++;
@@ -223,7 +229,7 @@ int Calculadora::valorActualVariable(Variable v) const {
     if (varVentana.definido(v)) {
         Ventana<tuple<int, int>> ventana = varVentana.obtener(v);
         if (ventana.tam() != 0)
-            return get<1>(ventana.operator[](ventana.tam()-1));
+            return get<1>(ventana[ventana.tam()-1]);
         else
             return 0;
     } else

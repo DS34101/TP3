@@ -33,21 +33,27 @@ TEST(test_Calculadora, Variables) {
     Instruccion i4;
     i4.IPUSH(5);
     Instruccion i5;
-    i4.IREAD("var");
-    p.AgInstruccion("s",i);
+    i5.IREAD("var");
+    p.AgInstruccion("s",i); //PUSH 500
+    p.AgInstruccion("s",i2);//WRITE
+    p.AgInstruccion("s",i3);//PUSH 1
     p.AgInstruccion("s",i2);
     p.AgInstruccion("s",i3);
     p.AgInstruccion("s",i2);
     p.AgInstruccion("s",i3);
     p.AgInstruccion("s",i2);
-    p.AgInstruccion("s",i3);
-    p.AgInstruccion("s",i2);
-    p.AgInstruccion("s",i4);
-    p.AgInstruccion("s",i2);
+    p.AgInstruccion("s",i4);//PUSH 5
+    p.AgInstruccion("s",i2);//WRITE
+    p.AgInstruccion("s",i5);//READ
     Calculadora c;
     c.nuevaCalculadora(p,"s",2);
+    stack<int> pila;
     c.ejecutarUnPaso();
+    pila.push(500);
+    EXPECT_EQ(c.Pila(),pila);
     c.ejecutarUnPaso();
+    pila.pop();
+    EXPECT_EQ(c.Pila(),pila);
     EXPECT_EQ(c.valorHistoricoVariable("var",2),500);
     c.ejecutarUnPaso();
     c.ejecutarUnPaso();
@@ -58,6 +64,10 @@ TEST(test_Calculadora, Variables) {
     EXPECT_EQ(c.valorHistoricoVariable("var",8),1);
     EXPECT_EQ(c.valorHistoricoVariable("var",2),500);
     c.ejecutarUnPaso();
+    pila.push(5);
+    EXPECT_EQ(c.Pila(),pila);
     c.ejecutarUnPaso();
     EXPECT_EQ(c.valorActualVariable("var"),5);
+    c.ejecutarUnPaso();
+    EXPECT_EQ(c.Pila().top(),5);
 }
