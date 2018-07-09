@@ -2,15 +2,15 @@
 
 void Calculadora::nuevaCalculadora(Programa prog, rut r, int W) {
     int i = 0;
-    list<tuple<string, vector<tuple<Instruccion, int> >, int> > rutinasYinstrucciones = prog.ParaCalculadora();
+    get<0>(inicio) = prog;
     indiceInstruccion = 0;
     momentoActual = 0;
     cantidadAsignaciones = 0;
     capacidadVentana = W;
     indiceRutinaActual = -1;
-    list<tuple<string, vector<tuple<Instruccion, int> >, int> >::iterator itRut = rutinasYinstrucciones.begin();
-    get<0>(inicio) = prog;
     get<1>(inicio) = r;
+    list<tuple<string, vector<tuple<Instruccion, int> >, int> > rutinasYinstrucciones = prog.ParaCalculadora();
+    list<tuple<string, vector<tuple<Instruccion, int> >, int> >::iterator itRut = rutinasYinstrucciones.begin();
     int j = rutinasYinstrucciones.size();
     progCalc.resize(j);
     while (itRut != rutinasYinstrucciones.end()) {

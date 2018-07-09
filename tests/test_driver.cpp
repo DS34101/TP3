@@ -285,7 +285,7 @@ TEST(test_driver, read_variable_indefinida) {
 	ASSERT_TRUE(d.ejecucionFinalizada());
 }
 
-TEST(test_driver, read) {
+TEST(test_driver, read){
 	for (int tam_ventana = 1; tam_ventana < 10; tam_ventana++) {
 		Driver d;
 		d.begin("avwsno");
