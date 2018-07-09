@@ -6,10 +6,6 @@ Programa::Programa():ListaProg(),cantRutina(),ParaAgregar() {}
 
 
 Programa::~Programa(){
-    for(int i =0; i<cantRutina;i++){
-        delete ListaProg[i];
-
-    }
     int control =ParaAgregar.size()-1;
     for(int i =0; i<control;i++){
         delete get<1>(ParaAgregar[i]);
@@ -83,7 +79,7 @@ void Programa::AgInstruccion(string r,Instruccion inst){
     int indiceRut = 0;
 
     for(int i=0; i<cantRutina;i++ ){
-        if (ListaProg[i]->Rut == r){
+        if (ListaProg[i].Rut == r){
             indiceRut = i;
             existe = true;
         }
@@ -97,7 +93,7 @@ void Programa::AgInstruccion(string r,Instruccion inst){
 
             for(int j = 0;j<cantRutina;j++){
 
-                if(inst.nombreRutina() == ListaProg[j]->Rut ){
+                if(inst.nombreRutina() == ListaProg[j].Rut ){
                     esta = true;
                     indiceAux = j;
 
@@ -107,32 +103,32 @@ void Programa::AgInstruccion(string r,Instruccion inst){
             if(esta){
                 tuple<Instruccion,int> v;
                 v=make_tuple(inst,indiceAux);
-                ListaProg[indiceRut]->instRut.push_back(v);
-                ListaProg[indiceRut]->tamRut++;
+                ListaProg[indiceRut].instRut.push_back(v);
+                ListaProg[indiceRut].tamRut++;
 
             }else{
 
                 vector<tuple<Instruccion,int>> n;
-                tuple<string,tuple<Instruccion,int>*> PR(inst.nombreRutina(),&ListaProg[indiceRut]->instRut[ListaProg[indiceRut]->tamRut -1]);
+                tuple<string,tuple<Instruccion,int>*> PR(inst.nombreRutina(),&ListaProg[indiceRut].instRut[ListaProg[indiceRut].tamRut -1]);
                 ParaAgregar.push_back(PR);
                 tuple<Instruccion,int> w;
                 w=make_tuple(inst,cantRutina-1);
-                ListaProg[indiceRut]->instRut.push_back(w);
-                ListaProg[indiceRut]->tamRut++;
+                ListaProg[indiceRut].instRut.push_back(w);
+                ListaProg[indiceRut].tamRut++;
 
 
             }
         }else{
             tuple<Instruccion,int> x;
             x=make_tuple(inst,indiceRut);
-            ListaProg[indiceRut]->instRut.push_back(x);
-            ListaProg[indiceRut]->tamRut++;
+            ListaProg[indiceRut].instRut.push_back(x);
+            ListaProg[indiceRut].tamRut++;
         }
 
 
     }else{
         vector<tuple<Instruccion,int>> n2;
-        Rutina* rut2 = new Rutina(r, n2);
+        Rutina rut2(r, n2);
         ListaProg.push_back(rut2);
         cantRutina++;
         bool aux = false;
@@ -163,7 +159,7 @@ void Programa::AgInstruccion(string r,Instruccion inst){
 
 
             for(int j = 0;j<cantRutina;j++){
-                if(ListaProg[j]->Rut == inst.nombreRutina() ){
+                if(ListaProg[j].Rut == inst.nombreRutina() ){
                     esta = true;
                     indiceAux = j;
 
@@ -173,8 +169,8 @@ void Programa::AgInstruccion(string r,Instruccion inst){
             if(esta){
                 tuple<Instruccion,int> v2;
                 v2 = make_tuple(inst,indiceAux);
-                ListaProg[cantRutina-1]->instRut.push_back(v2);
-                ListaProg[cantRutina-1]->tamRut++;
+                ListaProg[cantRutina-1].instRut.push_back(v2);
+                ListaProg[cantRutina-1].tamRut++;
 
 
 
@@ -183,13 +179,13 @@ void Programa::AgInstruccion(string r,Instruccion inst){
                 /*Rutina* rut = new Rutina(inst.nombreRutina(), n2);
                 ListaProg.push_back(rut);
                 cantRutina++;*/
-                tuple<string,tuple<Instruccion,int>*> PR(inst.nombreRutina(),&ListaProg[indiceRut]->instRut[ListaProg[indiceRut]->tamRut -1]);
+                tuple<string,tuple<Instruccion,int>*> PR(inst.nombreRutina(),&ListaProg[indiceRut].instRut[ListaProg[indiceRut].tamRut -1]);
                 ParaAgregar.push_back(PR);
 
                 tuple<Instruccion,int> w2;
                 w2 = make_tuple(inst,-1);
-                ListaProg[cantRutina-1]->instRut.push_back(w2);
-                ListaProg[indiceRut]->tamRut++;
+                ListaProg[cantRutina-1].instRut.push_back(w2);
+                ListaProg[indiceRut].tamRut++;
 
 
 
@@ -198,8 +194,8 @@ void Programa::AgInstruccion(string r,Instruccion inst){
         }else{
             tuple<Instruccion,int> x2;
             x2= make_tuple(inst,indiceRut);
-            ListaProg[cantRutina-1]->instRut.push_back(x2);
-            ListaProg[cantRutina-1]->tamRut++;
+            ListaProg[cantRutina-1].instRut.push_back(x2);
+            ListaProg[cantRutina-1].tamRut++;
 
         }
 
@@ -212,7 +208,7 @@ void Programa::AgInstruccion(string r,Instruccion inst){
 vector<string> Programa::Rutinas() const {
     vector<string> res;
     for(int i = 0; i<cantRutina;i++){
-        res.push_back(ListaProg[i]->Rut);
+        res.push_back(ListaProg[i].Rut);
 
     }
     return res;
@@ -221,8 +217,8 @@ vector<string> Programa::Rutinas() const {
 int Programa::longitud(string r) const{
     int res = 0;
     for(int i = 0; i<cantRutina;i++){
-        if(ListaProg[i]->Rut== r){
-            res = ListaProg[i]->tamRut;
+        if(ListaProg[i].Rut== r){
+            res = ListaProg[i].tamRut;
 
         }
     }
@@ -233,8 +229,8 @@ Instruccion Programa::Instrucciones(string r, int n)const {
     Instruccion res;
     bool encontrado = true;
     for(int i =0; i<cantRutina && encontrado;i++){
-        if(ListaProg[i]->Rut == r){
-            tuple<Instruccion,int> t = ListaProg[i]-> instRut[n];
+        if(ListaProg[i].Rut == r){
+            tuple<Instruccion,int> t = ListaProg[i].instRut[n];
             res = get<0>(t);
             encontrado = false;
         }
@@ -249,7 +245,7 @@ list <tuple<string,vector< tuple<Instruccion,int> >  ,int> > Programa::ParaCalcu
     list <tuple<string,vector< tuple<Instruccion,int> >  ,int> >  res;
 
     for(int i=0;i<cantRutina;i++){
-        tuple<Id,vector< tuple<Instruccion,int> >  ,int> auxt(ListaProg[i]->Rut,ListaProg[i]->instRut,ListaProg[i]->tamRut);
+        tuple<Id,vector< tuple<Instruccion,int> >  ,int> auxt(ListaProg[i].Rut,ListaProg[i].instRut,ListaProg[i].tamRut);
         res.push_back(auxt);
 
     }

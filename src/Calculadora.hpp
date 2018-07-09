@@ -1,14 +1,15 @@
+#include <cmath>
 #include "Calculadora.h"
 
 void Calculadora::nuevaCalculadora(Programa prog, rut r, int W) {
     int i = 0;
     get<0>(inicio) = prog;
+    get<1>(inicio) = r;
     indiceInstruccion = 0;
     momentoActual = 0;
     cantidadAsignaciones = 0;
     capacidadVentana = W;
     indiceRutinaActual = -1;
-    get<1>(inicio) = r;
     list<tuple<string, vector<tuple<Instruccion, int> >, int> > rutinasYinstrucciones = prog.ParaCalculadora();
     list<tuple<string, vector<tuple<Instruccion, int> >, int> >::iterator itRut = rutinasYinstrucciones.begin();
     int j = rutinasYinstrucciones.size();
@@ -27,7 +28,6 @@ void Calculadora::nuevaCalculadora(Programa prog, rut r, int W) {
             if ((get<0>(*itInstr)).OP() == OWRITE || (get<0>(*itInstr)).OP() == OREAD) {
                 if (!varVentana.definido(get<0>(*itInstr).nombreVariable())) {
                     Ventana<tuple<int, int>> *v = new Ventana<tuple<int, int>>(W);
-                    v->registrar(make_tuple(0,0));
                     varVentana.definirporPuntero((get<0>(*itInstr)).nombreVariable(), v);
                     v = NULL;
                 }
@@ -124,7 +124,7 @@ void Calculadora::ejecutarUnPaso() {
     }
     if (nojump)
         itaInstruccion++;
-    momentoActual = momentoActual + 1;
+    momentoActual++;
     indiceInstruccion++;
 }
 
@@ -145,7 +145,7 @@ stack<int> Calculadora::Pila() const {
 }
 
 void Calculadora::asignarVariable(Variable v, int n) {
-    asignaciones.push_back(make_tuple(momentoActual, v, n));
+    asignaciones.push_back(make_tuple(n, v, momentoActual));
     cantidadAsignaciones++;
     if (varVentana.definido(v)) {
         (varVentana.obtener(v)).registrar(make_tuple(momentoActual,n));
@@ -164,29 +164,37 @@ int Calculadora::valorHistoricoVariable(Variable v, instante i) const {
             if (i >= get<0>(varVentana.obtener(v).operator[](l))) {
                 while (get<0>(varVentana.obtener(v).operator[](l)) < (get<0>(varVentana.obtener(v).operator[](r)))) {
                     int m = l + (r - l) / 2;
-                    if (get<0>(varVentana.obtener(v).operator[](m)) > i) {
-                        r = m;
-                    } else {
+                    if (get<0>(varVentana.obtener(v).operator[](m)) <= i) {
                         l = m;
+                    } else {
+                        r = m;
                     }
                 }
                 return get<1>(varVentana.obtener(v).operator[](l));
             } else {
-                Calculadora nc;
-                nc.nuevaCalculadora(get<0>(inicio), get<1>(inicio), capacidadVentana);
+            /*    Programa progAUX;
+                for (int k = 0; k < progCalc.size(); ++k) {
+                    list<tuple<Instruccion,int,Ventana<tuple<int,int>>*>>::const_iterator it = get<1>(progCalc[k]).begin();
+                    while (it != get<1>(progCalc[k]).end()){
+                        progAUX.AgInstruccion(get<0>(progCalc[k]),get<0>(*it));
+                        it++;
+                    }
+                }
+              */  Calculadora* nc = new Calculadora;
+                (*nc).nuevaCalculadora(get<0>(inicio), get<1>(inicio), capacidadVentana);
                 int j = 0;
                 int a = 0;
                 list<tuple<int, Variable, instante>>::const_iterator itAsignaciones = asignaciones.begin();
                 while (j <= i) {
-                    if (cantidadAsignaciones > a && get<0>(*itAsignaciones) == i) {
-                        nc.asignarVariable(get<1>(*itAsignaciones), get<2>(*itAsignaciones));
+                    if (cantidadAsignaciones > a && get<2>(*itAsignaciones) == i) {
+                        (*nc).asignarVariable(get<1>(*itAsignaciones), get<0>(*itAsignaciones));
                         a++;
                         itAsignaciones++;
                     }
-                    nc.ejecutarUnPaso();
+                    (*nc).ejecutarUnPaso();
                     j++;
                 }
-                return nc.valorActualVariable(v);
+                return (*nc).valorActualVariable(v);
             }
         }
     } else {
@@ -215,7 +223,7 @@ int Calculadora::valorActualVariable(Variable v) const {
     if (varVentana.definido(v)) {
         Ventana<tuple<int, int>> ventana = varVentana.obtener(v);
         if (ventana.tam() != 0)
-            return get<1>(ventana.operator[](ventana.tam()));
+            return get<1>(ventana.operator[](ventana.tam()-1));
         else
             return 0;
     } else

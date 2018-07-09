@@ -2,7 +2,6 @@
 
 Driver::Driver() {
     // COMPLETAR
-    c = new Calculadora;
     p = new Programa;
 }
 Driver::~Driver() {
@@ -76,7 +75,7 @@ void Driver::jumpz(string rutina) {
 /////// Operaciones para ejecutar programas
 
 void Driver::comenzarEjecucion(string rutina, int capacidadVentana) {
-
+    c = new Calculadora;
     (*c).nuevaCalculadora((*p),rutina, capacidadVentana);
 
 }

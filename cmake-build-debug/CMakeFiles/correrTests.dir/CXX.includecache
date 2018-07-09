@@ -289,6 +289,8 @@ tuple
 -
 
 /home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Calculadora.hpp
+cmath
+-
 Calculadora.h
 /home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Calculadora.h
 
@@ -353,6 +355,8 @@ diccTrie.h
 /home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/tests/test_calculadora.cpp
 ../src/Calculadora.hpp
 /home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Calculadora.hpp
+gtest/gtest.h
+-
 
 /home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/tests/test_diccTrie.cpp
 gtest/gtest.h
