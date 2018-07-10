@@ -2,7 +2,7 @@
 // Created by dn-01 on 07/07/18.
 //
 #include <gtest/gtest.h>
-#include "../src/Instruccion.hpp"
+#include "../src/Instruccion.h"
 
 TEST(test_instruccion, IPUSH) {
     Instruccion instr;

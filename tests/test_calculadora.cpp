@@ -1,4 +1,4 @@
-#include "../src/Calculadora.hpp"
+#include "../src/Calculadora.h"
 #include <gtest/gtest.h>
 
 TEST(test_Calculadora, Push_y_valores) {

@@ -195,6 +195,33 @@ gtest/fast:
 	$(MAKE) -f tests/google-test/CMakeFiles/gtest.dir/build.make tests/google-test/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
+src/Calculadora.o: src/Calculadora.cpp.o
+
+.PHONY : src/Calculadora.o
+
+# target to build an object file
+src/Calculadora.cpp.o:
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/src/Calculadora.cpp.o
+.PHONY : src/Calculadora.cpp.o
+
+src/Calculadora.i: src/Calculadora.cpp.i
+
+.PHONY : src/Calculadora.i
+
+# target to preprocess a source file
+src/Calculadora.cpp.i:
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/src/Calculadora.cpp.i
+.PHONY : src/Calculadora.cpp.i
+
+src/Calculadora.s: src/Calculadora.cpp.s
+
+.PHONY : src/Calculadora.s
+
+# target to generate assembly for a file
+src/Calculadora.cpp.s:
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/src/Calculadora.cpp.s
+.PHONY : src/Calculadora.cpp.s
+
 src/Driver.o: src/Driver.cpp.o
 
 .PHONY : src/Driver.o
@@ -221,6 +248,60 @@ src/Driver.s: src/Driver.cpp.s
 src/Driver.cpp.s:
 	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/src/Driver.cpp.s
 .PHONY : src/Driver.cpp.s
+
+src/Instruccion.o: src/Instruccion.cpp.o
+
+.PHONY : src/Instruccion.o
+
+# target to build an object file
+src/Instruccion.cpp.o:
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/src/Instruccion.cpp.o
+.PHONY : src/Instruccion.cpp.o
+
+src/Instruccion.i: src/Instruccion.cpp.i
+
+.PHONY : src/Instruccion.i
+
+# target to preprocess a source file
+src/Instruccion.cpp.i:
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/src/Instruccion.cpp.i
+.PHONY : src/Instruccion.cpp.i
+
+src/Instruccion.s: src/Instruccion.cpp.s
+
+.PHONY : src/Instruccion.s
+
+# target to generate assembly for a file
+src/Instruccion.cpp.s:
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/src/Instruccion.cpp.s
+.PHONY : src/Instruccion.cpp.s
+
+src/Programa.o: src/Programa.cpp.o
+
+.PHONY : src/Programa.o
+
+# target to build an object file
+src/Programa.cpp.o:
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/src/Programa.cpp.o
+.PHONY : src/Programa.cpp.o
+
+src/Programa.i: src/Programa.cpp.i
+
+.PHONY : src/Programa.i
+
+# target to preprocess a source file
+src/Programa.cpp.i:
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/src/Programa.cpp.i
+.PHONY : src/Programa.cpp.i
+
+src/Programa.s: src/Programa.cpp.s
+
+.PHONY : src/Programa.s
+
+# target to generate assembly for a file
+src/Programa.cpp.s:
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/src/Programa.cpp.s
+.PHONY : src/Programa.cpp.s
 
 tests/test_calculadora.o: tests/test_calculadora.cpp.o
 
@@ -399,9 +480,18 @@ help:
 	@echo "... correrTests"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... src/Calculadora.o"
+	@echo "... src/Calculadora.i"
+	@echo "... src/Calculadora.s"
 	@echo "... src/Driver.o"
 	@echo "... src/Driver.i"
 	@echo "... src/Driver.s"
+	@echo "... src/Instruccion.o"
+	@echo "... src/Instruccion.i"
+	@echo "... src/Instruccion.s"
+	@echo "... src/Programa.o"
+	@echo "... src/Programa.i"
+	@echo "... src/Programa.s"
 	@echo "... tests/test_calculadora.o"
 	@echo "... tests/test_calculadora.i"
 	@echo "... tests/test_calculadora.s"

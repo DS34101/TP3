@@ -1,6 +1,6 @@
 #include "gtest/gtest.h"
 
-#include "../src/Programa.hpp"
+#include "../src/Programa.h"
 
 TEST(test_programa, programa_1_Instruccion) {
     Programa p;

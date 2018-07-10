@@ -201,9 +201,33 @@ CMakeFiles/correrTests.dir/tests/test_ventana.cpp.o.provides: CMakeFiles/correrT
 CMakeFiles/correrTests.dir/tests/test_ventana.cpp.o.provides.build: CMakeFiles/correrTests.dir/tests/test_ventana.cpp.o
 
 
+CMakeFiles/correrTests.dir/src/Calculadora.cpp.o: CMakeFiles/correrTests.dir/flags.make
+CMakeFiles/correrTests.dir/src/Calculadora.cpp.o: ../src/Calculadora.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/correrTests.dir/src/Calculadora.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/correrTests.dir/src/Calculadora.cpp.o -c "/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Calculadora.cpp"
+
+CMakeFiles/correrTests.dir/src/Calculadora.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/correrTests.dir/src/Calculadora.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Calculadora.cpp" > CMakeFiles/correrTests.dir/src/Calculadora.cpp.i
+
+CMakeFiles/correrTests.dir/src/Calculadora.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/correrTests.dir/src/Calculadora.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Calculadora.cpp" -o CMakeFiles/correrTests.dir/src/Calculadora.cpp.s
+
+CMakeFiles/correrTests.dir/src/Calculadora.cpp.o.requires:
+
+.PHONY : CMakeFiles/correrTests.dir/src/Calculadora.cpp.o.requires
+
+CMakeFiles/correrTests.dir/src/Calculadora.cpp.o.provides: CMakeFiles/correrTests.dir/src/Calculadora.cpp.o.requires
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/src/Calculadora.cpp.o.provides.build
+.PHONY : CMakeFiles/correrTests.dir/src/Calculadora.cpp.o.provides
+
+CMakeFiles/correrTests.dir/src/Calculadora.cpp.o.provides.build: CMakeFiles/correrTests.dir/src/Calculadora.cpp.o
+
+
 CMakeFiles/correrTests.dir/src/Driver.cpp.o: CMakeFiles/correrTests.dir/flags.make
 CMakeFiles/correrTests.dir/src/Driver.cpp.o: ../src/Driver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/correrTests.dir/src/Driver.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/correrTests.dir/src/Driver.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/correrTests.dir/src/Driver.cpp.o -c "/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Driver.cpp"
 
 CMakeFiles/correrTests.dir/src/Driver.cpp.i: cmake_force
@@ -225,6 +249,54 @@ CMakeFiles/correrTests.dir/src/Driver.cpp.o.provides: CMakeFiles/correrTests.dir
 CMakeFiles/correrTests.dir/src/Driver.cpp.o.provides.build: CMakeFiles/correrTests.dir/src/Driver.cpp.o
 
 
+CMakeFiles/correrTests.dir/src/Instruccion.cpp.o: CMakeFiles/correrTests.dir/flags.make
+CMakeFiles/correrTests.dir/src/Instruccion.cpp.o: ../src/Instruccion.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/correrTests.dir/src/Instruccion.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/correrTests.dir/src/Instruccion.cpp.o -c "/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Instruccion.cpp"
+
+CMakeFiles/correrTests.dir/src/Instruccion.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/correrTests.dir/src/Instruccion.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Instruccion.cpp" > CMakeFiles/correrTests.dir/src/Instruccion.cpp.i
+
+CMakeFiles/correrTests.dir/src/Instruccion.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/correrTests.dir/src/Instruccion.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Instruccion.cpp" -o CMakeFiles/correrTests.dir/src/Instruccion.cpp.s
+
+CMakeFiles/correrTests.dir/src/Instruccion.cpp.o.requires:
+
+.PHONY : CMakeFiles/correrTests.dir/src/Instruccion.cpp.o.requires
+
+CMakeFiles/correrTests.dir/src/Instruccion.cpp.o.provides: CMakeFiles/correrTests.dir/src/Instruccion.cpp.o.requires
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/src/Instruccion.cpp.o.provides.build
+.PHONY : CMakeFiles/correrTests.dir/src/Instruccion.cpp.o.provides
+
+CMakeFiles/correrTests.dir/src/Instruccion.cpp.o.provides.build: CMakeFiles/correrTests.dir/src/Instruccion.cpp.o
+
+
+CMakeFiles/correrTests.dir/src/Programa.cpp.o: CMakeFiles/correrTests.dir/flags.make
+CMakeFiles/correrTests.dir/src/Programa.cpp.o: ../src/Programa.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/correrTests.dir/src/Programa.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/correrTests.dir/src/Programa.cpp.o -c "/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Programa.cpp"
+
+CMakeFiles/correrTests.dir/src/Programa.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/correrTests.dir/src/Programa.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Programa.cpp" > CMakeFiles/correrTests.dir/src/Programa.cpp.i
+
+CMakeFiles/correrTests.dir/src/Programa.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/correrTests.dir/src/Programa.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Programa.cpp" -o CMakeFiles/correrTests.dir/src/Programa.cpp.s
+
+CMakeFiles/correrTests.dir/src/Programa.cpp.o.requires:
+
+.PHONY : CMakeFiles/correrTests.dir/src/Programa.cpp.o.requires
+
+CMakeFiles/correrTests.dir/src/Programa.cpp.o.provides: CMakeFiles/correrTests.dir/src/Programa.cpp.o.requires
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/src/Programa.cpp.o.provides.build
+.PHONY : CMakeFiles/correrTests.dir/src/Programa.cpp.o.provides
+
+CMakeFiles/correrTests.dir/src/Programa.cpp.o.provides.build: CMakeFiles/correrTests.dir/src/Programa.cpp.o
+
+
 # Object files for target correrTests
 correrTests_OBJECTS = \
 "CMakeFiles/correrTests.dir/tests/test_calculadora.cpp.o" \
@@ -233,7 +305,10 @@ correrTests_OBJECTS = \
 "CMakeFiles/correrTests.dir/tests/test_instruccion.cpp.o" \
 "CMakeFiles/correrTests.dir/tests/test_programa.cpp.o" \
 "CMakeFiles/correrTests.dir/tests/test_ventana.cpp.o" \
-"CMakeFiles/correrTests.dir/src/Driver.cpp.o"
+"CMakeFiles/correrTests.dir/src/Calculadora.cpp.o" \
+"CMakeFiles/correrTests.dir/src/Driver.cpp.o" \
+"CMakeFiles/correrTests.dir/src/Instruccion.cpp.o" \
+"CMakeFiles/correrTests.dir/src/Programa.cpp.o"
 
 # External object files for target correrTests
 correrTests_EXTERNAL_OBJECTS =
@@ -244,13 +319,16 @@ correrTests: CMakeFiles/correrTests.dir/tests/test_driver.cpp.o
 correrTests: CMakeFiles/correrTests.dir/tests/test_instruccion.cpp.o
 correrTests: CMakeFiles/correrTests.dir/tests/test_programa.cpp.o
 correrTests: CMakeFiles/correrTests.dir/tests/test_ventana.cpp.o
+correrTests: CMakeFiles/correrTests.dir/src/Calculadora.cpp.o
 correrTests: CMakeFiles/correrTests.dir/src/Driver.cpp.o
+correrTests: CMakeFiles/correrTests.dir/src/Instruccion.cpp.o
+correrTests: CMakeFiles/correrTests.dir/src/Programa.cpp.o
 correrTests: CMakeFiles/correrTests.dir/build.make
 correrTests: tests/google-test/libgtest.a
 correrTests: tests/google-test/libgtest_main.a
 correrTests: tests/google-test/libgtest.a
 correrTests: CMakeFiles/correrTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable correrTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable correrTests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/correrTests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -264,7 +342,10 @@ CMakeFiles/correrTests.dir/requires: CMakeFiles/correrTests.dir/tests/test_drive
 CMakeFiles/correrTests.dir/requires: CMakeFiles/correrTests.dir/tests/test_instruccion.cpp.o.requires
 CMakeFiles/correrTests.dir/requires: CMakeFiles/correrTests.dir/tests/test_programa.cpp.o.requires
 CMakeFiles/correrTests.dir/requires: CMakeFiles/correrTests.dir/tests/test_ventana.cpp.o.requires
+CMakeFiles/correrTests.dir/requires: CMakeFiles/correrTests.dir/src/Calculadora.cpp.o.requires
 CMakeFiles/correrTests.dir/requires: CMakeFiles/correrTests.dir/src/Driver.cpp.o.requires
+CMakeFiles/correrTests.dir/requires: CMakeFiles/correrTests.dir/src/Instruccion.cpp.o.requires
+CMakeFiles/correrTests.dir/requires: CMakeFiles/correrTests.dir/src/Programa.cpp.o.requires
 
 .PHONY : CMakeFiles/correrTests.dir/requires
 

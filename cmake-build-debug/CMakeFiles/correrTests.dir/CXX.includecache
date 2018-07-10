@@ -278,6 +278,12 @@ cxxabi.h
 acxx_demangle.h
 -
 
+/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Calculadora.cpp
+cmath
+-
+Calculadora.h
+/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Calculadora.h
+
 /home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Calculadora.h
 Programa.h
 /home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Programa.h
@@ -288,12 +294,6 @@ diccTrie.hpp
 tuple
 -
 
-/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Calculadora.hpp
-cmath
--
-Calculadora.h
-/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Calculadora.h
-
 /home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Driver.cpp
 Driver.h
 /home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Driver.h
@@ -301,6 +301,10 @@ Driver.h
 /home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Driver.h
 Calculadora.h
 /home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Calculadora.h
+
+/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Instruccion.cpp
+Instruccion.h
+/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Instruccion.h
 
 /home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Instruccion.h
 stack
@@ -312,9 +316,9 @@ list
 tuple
 -
 
-/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Instruccion.hpp
-Instruccion.h
-/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Instruccion.h
+/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Programa.cpp
+Programa.h
+/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Programa.h
 
 /home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Programa.h
 vector
@@ -327,10 +331,6 @@ list
 -
 Instruccion.h
 /home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Instruccion.h
-
-/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Programa.hpp
-Programa.h
-/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Programa.h
 
 /home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Ventana.h
 Ventana.hpp
@@ -353,8 +353,8 @@ diccTrie.h
 /home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/diccTrie.h
 
 /home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/tests/test_calculadora.cpp
-../src/Calculadora.hpp
-/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Calculadora.hpp
+../src/Calculadora.h
+/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Calculadora.h
 gtest/gtest.h
 -
 
@@ -373,14 +373,14 @@ gtest/gtest.h
 /home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/tests/test_instruccion.cpp
 gtest/gtest.h
 -
-../src/Instruccion.hpp
-/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Instruccion.hpp
+../src/Instruccion.h
+/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Instruccion.h
 
 /home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/tests/test_programa.cpp
 gtest/gtest.h
 /home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/tests/gtest/gtest.h
-../src/Programa.hpp
-/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Programa.hpp
+../src/Programa.h
+/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Programa.h
 
 /home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/tests/test_ventana.cpp
 gtest/gtest.h

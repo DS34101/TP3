@@ -226,10 +226,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Calculadora.h">
+		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Calculadora.cpp">
 			<Option target="correrTests"/>
 		</Unit>
-		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Calculadora.hpp">
+		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Calculadora.h">
 			<Option target="correrTests"/>
 		</Unit>
 		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Driver.cpp">
@@ -238,16 +238,16 @@
 		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Driver.h">
 			<Option target="correrTests"/>
 		</Unit>
+		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Instruccion.cpp">
+			<Option target="correrTests"/>
+		</Unit>
 		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Instruccion.h">
 			<Option target="correrTests"/>
 		</Unit>
-		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Instruccion.hpp">
+		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Programa.cpp">
 			<Option target="correrTests"/>
 		</Unit>
 		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Programa.h">
-			<Option target="correrTests"/>
-		</Unit>
-		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Programa.hpp">
 			<Option target="correrTests"/>
 		</Unit>
 		<Unit filename="/home/dn-01/Escritorio/Algoritmo y Estructura de datos II/Trabajos Prácticos/TP3/TP3 REPOSITORIO/TP3/src/Ventana.h">
