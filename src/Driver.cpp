@@ -6,8 +6,8 @@ Driver::Driver() {
 }
 Driver::~Driver() {
 	// COMPLETAR
-    /*delete c;
-    delete p;*/
+    delete c;
+    delete p;
 }
 
 // Operaciones para agregar instrucciones

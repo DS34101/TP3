@@ -67,6 +67,7 @@ private:
                 encontrarYBorrar(punt->_siguientes[i]);
             punt->_siguientes[i] = NULL;
         }
+        delete[] punt->_siguientes;
         if (punt->definicion != NULL) {
             delete punt->definicion;
             punt->definicion = NULL;

@@ -9,68 +9,18 @@ Programa::~Programa(){
     int control =ParaAgregar.size()-1;
     for(int i =0; i<control; i++){
         get<1>(ParaAgregar[i])=NULL;
-
     }
     ParaAgregar.clear();
     ListaProg.clear();
 }
-/**void Programa::AgregarAunNoExiste(Instruccion instr, int indiceRut) {
-    int i=0;
-    bool encontrado = false;
-    while(i<AunNoExistentes.size() && encontrado == false){
-        if (get<0>(AunNoExistentes[i]) == instr.nombreRutina()){
-            encontrado = true;
-            get<1>(AunNoExistentes[i]).push_back(*((get<1>(*ListaProg[indiceRut]))[(get<1>(*ListaProg[indiceRut])).tamRut-1]));
-        }
-        i++;
-    }
-    if (encontrado == false) {
-        vector<tuple<Instruccion, int>*> vacia;
-        int tamaniodelaRutina = ListaProg[indiceRut]->tamRut;
-        vacia.push_back(*((*ListaProg[indiceRut]).instRut[tamaniodelaRutina-1]));
-        AunNoExistentes.push_back(make_tuple(instr.nombreRutina(), vacia));
-    }
-}
-
-void Programa::BuscarEnAunNoExiste(Id r, int indiceRut) {
-    int i=0;
-    bool encontrado = false;
-    while(i<AunNoExistentes.size() && !encontrado) {
-        if (get<0>(AunNoExistentes[i]) == r) {
-            encontrado = true;
-            int j=0;
-            while (j<(get<1>(AunNoExistentes[i])).size()){
-                get<1>(*(get<1>(AunNoExistentes[i])[j]))=indiceRut;
-                j++;
-            }
-        }
-        i++;
-    }
-    int l=0;
-    for (int k = 0; k < AunNoExistentes.size()-1; ++k) {
-        if (get<0>(AunNoExistentes[i]) == r)
-            l++;
-        AunNoExistentes[k]==AunNoExistentes[l];
-        k++;
-        l++;
-    }
-    AunNoExistentes.pop_back();
-}
- **/
 void Programa::SandDAUX(string r){
     tuple<string,tuple<Instruccion,int> > res;
-
     for(int i =0; i< ParaAgregar.size()-1;i++){
         if(get<0>(ParaAgregar[i])==r ){
-
             ParaAgregar.erase(ParaAgregar.begin() +i);
-
         }
-
     }
-
 }
-
 
 void Programa::AgInstruccion(string r,Instruccion inst){
     bool existe = false;
@@ -106,7 +56,6 @@ void Programa::AgInstruccion(string r,Instruccion inst){
                 puntinstr = &ListaProg[indiceRut].instRut[ListaProg[indiceRut].tamRut -1];
                 tuple<string,tuple<Instruccion,int>*> PR(inst.nombreRutina(),puntinstr);
                 ParaAgregar.push_back(PR);
-
             }
         }else{
             tuple<Instruccion,int> x;
@@ -157,7 +106,7 @@ void Programa::AgInstruccion(string r,Instruccion inst){
                 w2 = make_tuple(inst,-1);
                 ListaProg[cantRutina-1].instRut.push_back(w2);
                 ListaProg[indiceRut].tamRut++;
-                tuple<Instruccion,int>* puntinstr = new tuple<Instruccion,int>;
+                tuple<Instruccion,int>* puntinstr;
                 puntinstr = &ListaProg[indiceRut].instRut[ListaProg[indiceRut].tamRut-1];
                 tuple<string,tuple<Instruccion,int>*> PR(inst.nombreRutina(),puntinstr);
                 ParaAgregar.push_back(PR);
@@ -185,7 +134,6 @@ int Programa::longitud(string r) const{
     for(int i = 0; i<cantRutina;i++){
         if(ListaProg[i].Rut== r){
             res = ListaProg[i].tamRut;
-
         }
     }
     return res;

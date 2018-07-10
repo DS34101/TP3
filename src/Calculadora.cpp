@@ -29,7 +29,6 @@ void Calculadora::nuevaCalculadora(Programa prog, rut r, int W) {
                 if (!varVentana.definido(get<0>(*itInstr).nombreVariable())) {
                     Ventana<tuple<int, int>> *v = new Ventana<tuple<int, int>>(W);
                     varVentana.definirporPuntero((get<0>(*itInstr)).nombreVariable(), v);
-                    v = NULL;
                 }
                 Ventana<tuple<int, int>> *ptrVentana = &varVentana.obtener((get<0>(*itInstr)).nombreVariable());
                 v.push_back(make_tuple((get<0>(*itInstr)), (get<1>(*itInstr)), ptrVentana));
@@ -48,6 +47,13 @@ void Calculadora::nuevaCalculadora(Programa prog, rut r, int W) {
 
 Calculadora::~Calculadora() {
     asignaciones.clear();
+    for (int i = 0; i < progCalc.size(); ++i) {
+        list<tuple<Instruccion, int, Ventana<tuple<int, int>> *>>::iterator it = get<1>(progCalc[i]).begin();
+        while (it != get<1>(progCalc[i]).end()) {
+            get<2>(*it)=NULL;
+            it++;
+        }
+    }
     progCalc.clear();
     progCalc.erase(progCalc.begin(), progCalc.end());
     while (!pila.empty()) {
@@ -196,21 +202,22 @@ int Calculadora::valorHistoricoVariable(Variable v, instante i) const {
                         it++;
                     }
                 }
-              */  Calculadora* nc = new Calculadora;
-                (*nc).nuevaCalculadora(get<0>(inicio), get<1>(inicio), capacidadVentana);
+              */  Calculadora nc;
+                nc.nuevaCalculadora(get<0>(inicio), get<1>(inicio), capacidadVentana);
                 int j = 0;
                 int a = 0;
                 list<tuple<int, Variable, instante>>::const_iterator itAsignaciones = asignaciones.begin();
                 while (j <= i) {
                     while (cantidadAsignaciones > a && get<2>(*itAsignaciones) <= j) {
-                        (*nc).asignarVariable(get<1>(*itAsignaciones), get<0>(*itAsignaciones));
+                        nc.asignarVariable(get<1>(*itAsignaciones), get<0>(*itAsignaciones));
                         a++;
                         itAsignaciones++;
                     }
-                    (*nc).ejecutarUnPaso();
+                    nc.ejecutarUnPaso();
                     j++;
                 }
-                return (*nc).valorActualVariable(v);
+                int res = nc.valorActualVariable(v);
+                return res;
             }
         }
     } else {

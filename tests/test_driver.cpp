@@ -652,4 +652,3 @@ TEST(test_driver, programa_factorial) {
 		ASSERT_EQ(d.valorVariable("y"), factorial(a));
 	}
 }
-

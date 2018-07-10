@@ -46,8 +46,6 @@ private:
     int cantRutina;
 
     void SandDAUX(string);
-    void AgregarAunNoExiste(Instruccion,int);
-    void BuscarEnAunNoExiste(Id, int);
 
 };
 
