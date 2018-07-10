@@ -64,6 +64,7 @@ bool Calculadora::ejecutando() const {
 }
 
 void Calculadora::ejecutarUnPaso() {
+    momentoActual++;
     bool nojump = true;
     if (get<0>(*itaInstruccion).OP() == OADD) {
         if (pila.empty())
@@ -130,7 +131,7 @@ void Calculadora::ejecutarUnPaso() {
         itaInstruccion++;
         indiceInstruccion++;
     }
-    momentoActual++;
+
 
 }
 
@@ -168,16 +169,24 @@ int Calculadora::valorHistoricoVariable(Variable v, instante i) const {
             int l = 0;
             int r = varVentana.obtener(v).tam()-1;
             if (i >= get<0>(varVentana.obtener(v).operator[](l))) {
-                while(l < r){
-                    int m = l + (r-l)/2;
-                    if (get<0>(varVentana.obtener(v)[l]) <= i && get<0>(varVentana.obtener(v)[l+1]) > i)
-                        return get<1>(varVentana.obtener(v)[l]);
-                    if (get<0>(varVentana.obtener(v)[l]) < i)
+                if (get<0>(varVentana.obtener(v).operator[](r))<i)
+                    return get<1>(varVentana.obtener(v).operator[](r));
+                if (l!=r){
+                while (l <= r) {
+                    int m = l + (r - l) / 2;
+                    int k = get<0>(varVentana.obtener(v).operator[](m));
+                    if (get<0>(varVentana.obtener(v).operator[](m))==i)
+                        return get<1>(varVentana.obtener(v).operator[](m));
+                    if (get<0>(varVentana.obtener(v)[m]) < i)
                         l = m + 1;
                     else
                         r = m - 1;
                 }
-                return get<1>(varVentana.obtener(v)[l]);
+            }
+                if (get<0>(varVentana.obtener(v).operator[](l))<=i)
+                    return get<1>(varVentana.obtener(v).operator[](l));
+                else
+                    return get<1>(varVentana.obtener(v).operator[](r));
             } else {
             /*    Programa progAUX;
                 for (int k = 0; k < progCalc.size(); ++k) {
