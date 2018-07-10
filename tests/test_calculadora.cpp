@@ -61,6 +61,7 @@ TEST(test_Calculadora, Variables) {
     c.ejecutarUnPaso();
     c.ejecutarUnPaso();
     c.ejecutarUnPaso();
+    EXPECT_EQ(c.valorHistoricoVariable("var",7),1);
     EXPECT_EQ(c.valorHistoricoVariable("var",8),1);
     EXPECT_EQ(c.valorHistoricoVariable("var",2),500);
     c.ejecutarUnPaso();
@@ -88,4 +89,82 @@ TEST(test_Calculadora, rutJumpzyJump) {
     EXPECT_EQ(c.rutinaActual(),"conjumpz");
     c.ejecutarUnPaso();
     EXPECT_EQ(c.rutinaActual(),"conjump");
+}
+
+TEST(test_calculadora, todaslasOperaciones){
+    Programa p;
+    Instruccion instr1;
+    Instruccion instr2;
+    Instruccion instr3;
+    Instruccion instr4;
+    Instruccion instr5;
+    Instruccion instr6;
+    Instruccion instr7;
+    Instruccion instr8;
+    Instruccion instr9;
+    instr1.IJUMP("haciaJump");
+    instr2.IJUMPZ("haciaJumpz");
+    instr3.IADD();
+    instr4.IMUL();
+    instr5.ISUB();
+    instr6.IWRITE("var"),
+    instr7.IREAD("var");
+    instr8.IPUSH(5);
+    instr9.IPUSH(0);
+    p.AgInstruccion("inicio",instr6);
+    p.AgInstruccion("inicio",instr7);
+    p.AgInstruccion("inicio",instr8);
+    p.AgInstruccion("inicio",instr6);
+    p.AgInstruccion("inicio",instr7);
+    p.AgInstruccion("inicio",instr6);
+    p.AgInstruccion("inicio",instr8);
+    p.AgInstruccion("inicio",instr8);
+    p.AgInstruccion("inicio",instr3);
+    p.AgInstruccion("inicio",instr8);
+    p.AgInstruccion("inicio",instr4);
+    p.AgInstruccion("inicio",instr8);
+    p.AgInstruccion("inicio",instr5);
+    p.AgInstruccion("inicio",instr5);
+    p.AgInstruccion("inicio",instr9);
+    p.AgInstruccion("inicio",instr2);
+    p.AgInstruccion("haciaJumpz",instr1);
+    p.AgInstruccion("haciaJump",instr8);
+    p.AgInstruccion("haciaJump",instr2);
+    Calculadora c;
+    c.nuevaCalculadora(p,"inicio",2);
+    c.ejecutarUnPaso();
+    EXPECT_EQ(c.valorActualVariable("var"),0);
+    c.ejecutarUnPaso();
+    EXPECT_EQ(c.Pila().top(),0);
+    c.ejecutarUnPaso();
+    EXPECT_EQ(c.Pila().top(),5);
+    c.ejecutarUnPaso();
+    EXPECT_EQ(c.valorActualVariable("var"),5);
+    c.ejecutarUnPaso();
+    EXPECT_EQ(c.Pila().top(),5);
+    c.ejecutarUnPaso();
+    c.ejecutarUnPaso();
+    c.ejecutarUnPaso();
+    c.ejecutarUnPaso();
+    EXPECT_EQ(c.Pila().top(),10);
+    c.ejecutarUnPaso();
+    c.ejecutarUnPaso();
+    EXPECT_EQ(c.Pila().top(),50);
+    c.ejecutarUnPaso();
+    c.ejecutarUnPaso();
+    EXPECT_EQ(c.Pila().top(),45);
+    c.ejecutarUnPaso();
+    EXPECT_EQ(c.Pila().top(),-45);
+    c.ejecutarUnPaso();
+    c.ejecutarUnPaso();
+    EXPECT_EQ(c.rutinaActual(),"haciaJumpz");
+    c.ejecutarUnPaso();
+    EXPECT_EQ(c.rutinaActual(),"haciaJump");
+    c.ejecutarUnPaso();
+    c.ejecutarUnPaso();
+    EXPECT_EQ(c.rutinaActual(),"haciaJump");
+    EXPECT_FALSE(c.ejecutando());
+
+
+
 }
