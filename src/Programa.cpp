@@ -14,7 +14,6 @@ Programa::~Programa(){
     ListaProg.clear();
 }
 void Programa::SandDAUX(string r){
-    tuple<string,tuple<Instruccion,int> > res;
     for(int i =0; i< ParaAgregar.size()-1;i++){
         if(get<0>(ParaAgregar[i])==r ){
             ParaAgregar.erase(ParaAgregar.begin() +i);
