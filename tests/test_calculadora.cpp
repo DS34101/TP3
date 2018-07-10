@@ -71,3 +71,21 @@ TEST(test_Calculadora, Variables) {
     c.ejecutarUnPaso();
     EXPECT_EQ(c.Pila().top(),5);
 }
+
+TEST(test_Calculadora, rutJumpzyJump) {
+    Programa p;
+    Instruccion instr1;
+    Instruccion instr2;
+    Instruccion instr3;
+    instr1.IPUSH(0);
+    instr2.IJUMPZ("conjumpz");
+    instr3.IJUMP("conjump");
+    p.AgInstruccion("conjumpz",instr3);
+    p.AgInstruccion("conjump",instr2);
+    Calculadora c;
+    c.nuevaCalculadora(p,"conjump",0);
+    c.ejecutarUnPaso();
+    EXPECT_EQ(c.rutinaActual(),"conjumpz");
+    c.ejecutarUnPaso();
+    EXPECT_EQ(c.rutinaActual(),"conjump");
+}

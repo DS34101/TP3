@@ -116,7 +116,6 @@ void Calculadora::ejecutarUnPaso() {
         indiceRutinaActual = get<1>(*itaInstruccion);
         itaInstruccion=get<1>(progCalc[indiceRutinaActual]).begin();
         indiceInstruccion = 0;
-
     } else if ((get<0>(*itaInstruccion).OP() == OJUMPZ)) {
         if (pila.empty() || pila.top() == 0) {
             nojump = false;
