@@ -13,7 +13,6 @@ using namespace std;
 
 typedef string rut;
 typedef string Variable;
-typedef int instante;
 
 class Calculadora{
 public:
@@ -28,31 +27,51 @@ public:
 
     void asignarVariable(Variable, int);
 
-    int valorHistoricoVariable(Variable,instante)const;
+    int valorHistoricoVariable(Variable, int)const;
 
     int valorActualVariable(Variable)const;
 
     int IndiceInstruccionActual();
 
-    instante InstanteActual()const;
+    int InstanteActual()const;
 
     rut rutinaActual();
 
     stack<int> Pila()const;
 
 private:
-    instante momentoActual;
+
+    struct tuplaAsignacion{
+        int valor;
+        string variable;
+        int instante;
+    };
+    struct tuplaVentana{
+        int instante ;
+        int valor;
+    };
+    struct Instr{
+        Instruccion instruccion;
+        int IndiceSalto;
+        Ventana<tuplaVentana> *punteroVentana;
+    };
+    struct Rutina{
+        string nombreRutina;
+        list<Instr> Instrucciones;
+        int tamanioRutina;
+    };
+    int momentoActual;
     int capacidadVentana;
     int indiceRutinaActual;
     int indiceInstruccion;
     stack<int> pila;
-    vector<tuple<rut,std::list<tuple<Instruccion,int,Ventana<tuple<int,int>>*>>,int>> progCalc;
-    list<tuple<int ,Variable, instante>> asignaciones;
+    vector<Rutina> progCalc;
+    list<tuplaAsignacion> asignaciones;
     int cantidadAsignaciones;
-    dicc_trie<Ventana<tuple<int,int>>> varVentana;
+    dicc_trie<Ventana<tuplaVentana>> varVentana;
     dicc_trie<int> varAsignacionActual;
     tuple<Programa, rut> inicio;
-    list<std::tuple<Instruccion, int, Ventana<std::tuple<int, int>> *>>::iterator itaInstruccion;
+    list<Instr>::iterator itaInstruccion;
 };
 
 

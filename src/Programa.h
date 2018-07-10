@@ -43,7 +43,6 @@ private:
     vector<Rutina> ListaProg;
 
     vector<tuple<string,tuple<Instruccion,int>* > > ParaAgregar;
-    int cantRutina;
 
     void SandDAUX(string);
 

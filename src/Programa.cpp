@@ -2,7 +2,7 @@
 
 //constructor inicializa lista prog en vacia y la cantidad de rutnias es 0
 
-Programa::Programa():ListaProg(),cantRutina(),ParaAgregar() {}
+Programa::Programa():ListaProg(),ParaAgregar() {}
 
 
 Programa::~Programa(){
@@ -25,6 +25,7 @@ void Programa::SandDAUX(string r){
 void Programa::AgInstruccion(string r,Instruccion inst){
     bool existe = false;
     int indiceRut = 0;
+    int cantRutina=ListaProg.size();
     for(int i=0; i<cantRutina;i++ ){
         if (ListaProg[i].Rut == r){
             indiceRut = i;
@@ -122,7 +123,7 @@ void Programa::AgInstruccion(string r,Instruccion inst){
 
 vector<string> Programa::Rutinas() const {
     vector<string> res;
-    for(int i = 0; i<cantRutina;i++){
+    for(int i = 0; i<ListaProg.size();i++){
         res.push_back(ListaProg[i].Rut);
 
     }
@@ -131,7 +132,7 @@ vector<string> Programa::Rutinas() const {
 }
 int Programa::longitud(string r) const{
     int res = 0;
-    for(int i = 0; i<cantRutina;i++){
+    for(int i = 0; i<ListaProg.size();i++){
         if(ListaProg[i].Rut== r){
             res = ListaProg[i].tamRut;
         }
@@ -142,7 +143,7 @@ int Programa::longitud(string r) const{
 Instruccion Programa::Instrucciones(string r, int n)const {
     Instruccion res;
     bool encontrado = true;
-    for(int i =0; i<cantRutina && encontrado;i++){
+    for(int i =0; i<ListaProg.size() && encontrado;i++){
         if(ListaProg[i].Rut == r){
             tuple<Instruccion,int> t = ListaProg[i].instRut[n];
             res = get<0>(t);
@@ -158,7 +159,7 @@ list <tuple<string,vector< tuple<Instruccion,int> >  ,int> > Programa::ParaCalcu
 
     list <tuple<string,vector< tuple<Instruccion,int> >  ,int> >  res;
 
-    for(int i=0;i<cantRutina;i++){
+    for(int i=0;i<ListaProg.size();i++){
         tuple<Id,vector< tuple<Instruccion,int> >  ,int> auxt(ListaProg[i].Rut,ListaProg[i].instRut,ListaProg[i].tamRut);
         res.push_back(auxt);
 
