@@ -127,10 +127,12 @@ void Calculadora::ejecutarUnPaso() {
                 pila.pop();
         }
     }
-    if (nojump)
+    if (nojump) {
         itaInstruccion++;
+        indiceInstruccion++;
+    }
     momentoActual++;
-    indiceInstruccion++;
+
 }
 
 int Calculadora::IndiceInstruccionActual() {

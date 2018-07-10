@@ -7,8 +7,8 @@ Programa::Programa():ListaProg(),cantRutina(),ParaAgregar() {}
 
 Programa::~Programa(){
     int control =ParaAgregar.size()-1;
-    for(int i =0; i<control;i++){
-        delete get<1>(ParaAgregar[i]);
+    for(int i =0; i<control; i++){
+        get<1>(ParaAgregar[i])=NULL;
 
     }
     ParaAgregar.clear();
@@ -69,7 +69,6 @@ void Programa::SandDAUX(string r){
 
     }
 
-
 }
 
 
@@ -107,12 +106,13 @@ void Programa::AgInstruccion(string r,Instruccion inst){
                 ListaProg[indiceRut].tamRut++;
 
             }else{
-
                 vector<tuple<Instruccion,int>> n;
-                tuple<string,tuple<Instruccion,int>*> PR(inst.nombreRutina(),&ListaProg[indiceRut].instRut[ListaProg[indiceRut].tamRut -1]);
+                tuple<Instruccion,int>* puntinstr = new tuple<Instruccion,int>;
+                puntinstr = &ListaProg[indiceRut].instRut[ListaProg[indiceRut].tamRut -1];
+                tuple<string,tuple<Instruccion,int>*> PR(inst.nombreRutina(),puntinstr);
                 ParaAgregar.push_back(PR);
                 tuple<Instruccion,int> w;
-                w=make_tuple(inst,cantRutina-1);
+                w=make_tuple(inst,-1);
                 ListaProg[indiceRut].instRut.push_back(w);
                 ListaProg[indiceRut].tamRut++;
 
@@ -133,20 +133,19 @@ void Programa::AgInstruccion(string r,Instruccion inst){
         cantRutina++;
         bool aux = false;
         int indexaux =0;
-        int control = ParaAgregar.size()-1;
+        int control = ParaAgregar.size();
             for(int i=0;i<control;i++){
                 if(get<0>(ParaAgregar[i])==r){
-                    indexaux =i;
+                //    indexaux =i;
                     aux = true;
+                    get<1>(*get<1>(ParaAgregar[i]))=cantRutina-1;
                 }
 
             }
         if(aux){
-        tuple<string,tuple<Instruccion,int>* >inf =ParaAgregar[indexaux];
+      //  tuple<string,tuple<Instruccion,int>* >inf =ParaAgregar[indexaux];
         SandDAUX(r);
-        get<1>(*get<1>(inf)) = indiceRut;
-
-
+    //    get<1>(*get<1>(inf)) = ListaProg.size() -1;
         }
 
         if(inst.OP() == OJUMP || inst.OP() == OJUMPZ ){
@@ -179,13 +178,15 @@ void Programa::AgInstruccion(string r,Instruccion inst){
                 /*Rutina* rut = new Rutina(inst.nombreRutina(), n2);
                 ListaProg.push_back(rut);
                 cantRutina++;*/
-                tuple<string,tuple<Instruccion,int>*> PR(inst.nombreRutina(),&ListaProg[indiceRut].instRut[ListaProg[indiceRut].tamRut -1]);
-                ParaAgregar.push_back(PR);
-
                 tuple<Instruccion,int> w2;
                 w2 = make_tuple(inst,-1);
                 ListaProg[cantRutina-1].instRut.push_back(w2);
                 ListaProg[indiceRut].tamRut++;
+                tuple<Instruccion,int>* puntinstr = new tuple<Instruccion,int>;
+                puntinstr = &ListaProg[indiceRut].instRut[ListaProg[indiceRut].tamRut-1];
+                tuple<string,tuple<Instruccion,int>*> PR(inst.nombreRutina(),puntinstr);
+                ParaAgregar.push_back(PR);
+
 
 
 
