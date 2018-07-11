@@ -7,6 +7,15 @@ TEST(test_dicctrie,definir){
     EXPECT_EQ(p.obtener("hola"),"Prueba");
 }
 
+TEST(test_dicctrie,definirporPuntero){
+    dicc_trie<string> p;
+    string* prueba = new string;
+    *prueba="funciona";
+    p.definirporPuntero("hola",prueba);
+    EXPECT_EQ(p.definido("hola"), true);
+    EXPECT_EQ(p.obtener("hola"),"funciona");
+}
+
 TEST(test_dicctrie,redefinir){
     dicc_trie<string> p;
     p.definir("hola","Prueba");

@@ -48,6 +48,8 @@ TEST(test_Calculadora, Variables) {
     Calculadora c;
     c.nuevaCalculadora(p,"s",2);
     stack<int> pila;
+    EXPECT_EQ(c.valorHistoricoVariable("var",0),0);
+    EXPECT_EQ(c.valorActualVariable("var"),0);
     c.ejecutarUnPaso();
     pila.push(500);
     EXPECT_EQ(c.Pila(),pila);
@@ -89,6 +91,44 @@ TEST(test_Calculadora, rutJumpzyJump) {
     EXPECT_EQ(c.rutinaActual(),"conjumpz");
     c.ejecutarUnPaso();
     EXPECT_EQ(c.rutinaActual(),"conjump");
+}
+TEST(test_Calculadora, ADDPILAVACIAyMUL) {
+    Programa p;
+    Instruccion instr1;
+    Instruccion instr2;
+    Instruccion instr3;
+    instr1.IADD();
+    instr2.IMUL();
+    p.AgInstruccion("prueba",instr1);
+    p.AgInstruccion("prueba",instr2);
+    Calculadora c;
+    c.nuevaCalculadora(p,"prueba",0);
+    c.ejecutarUnPaso();
+    EXPECT_EQ(c.rutinaActual(),"prueba");
+    EXPECT_EQ(c.Pila().top(),0);
+    c.ejecutarUnPaso();
+    EXPECT_EQ(c.Pila().top(),0);
+}
+TEST(test_Calculadora, SUBPILAVACIA) {
+    Programa p;
+    Instruccion instr1;
+    instr1.ISUB();
+    p.AgInstruccion("prueba",instr1);
+    Calculadora c;
+    c.nuevaCalculadora(p,"prueba",0);
+    c.ejecutarUnPaso();
+    EXPECT_EQ(c.Pila().top(),0);
+}
+
+TEST(test_Calculadora, MULPILAVACIA) {
+    Programa p;
+    Instruccion instr1;
+    instr1.IMUL();
+    p.AgInstruccion("prueba",instr1);
+    Calculadora c;
+    c.nuevaCalculadora(p,"prueba",0);
+    c.ejecutarUnPaso();
+    EXPECT_EQ(c.Pila().top(),0);
 }
 
 TEST(test_calculadora, todaslasOperaciones){

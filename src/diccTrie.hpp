@@ -71,6 +71,8 @@ T& dicc_trie<T>::obtener(const string &key)const {
     }
     return (*actual->definicion);
 }
+//Esta funcion existe porque no te deja poner como definicion una ventana pasando.
+//Para usarla se envia el puntero hacia ese dato.
 template<typename T>
 void dicc_trie<T>::definirporPuntero(const string &key, T* significado) {
     if(_raiz==NULL){
