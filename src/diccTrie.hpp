@@ -10,6 +10,30 @@ template<typename T>
 dicc_trie<T>::dicc_trie() : _raiz(NULL){}
 
 template<typename T>
+dicc_trie<T>::Nodo::Nodo() : _siguientes(NULL), definicion(NULL){
+    _siguientes = new Nodo *[256];
+    int i = 0;
+    while (i < 256) {
+        _siguientes[i] = NULL;
+        i++;
+    }
+};
+template<typename T>
+void dicc_trie<T>::encontrarYBorrar(Nodo *punt) {
+    for (int i = 0; i < 256; ++i) {
+        if (punt->_siguientes[i] != NULL)
+            encontrarYBorrar(punt->_siguientes[i]);
+        punt->_siguientes[i] = NULL;
+    }
+    delete[] punt->_siguientes;
+    if (punt->definicion != NULL) {
+        delete punt->definicion;
+        punt->definicion = NULL;
+    }
+    delete punt;
+}
+
+template<typename T>
 dicc_trie<T>::~dicc_trie(){
     if (_raiz!=NULL)
         encontrarYBorrar(_raiz);

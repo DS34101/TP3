@@ -2,9 +2,9 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
+      <config projectName="solucion" targetName="gtest" />
       <config projectName="solucion" targetName="gtest_main" />
       <config projectName="solucion" targetName="correrTests" />
-      <config projectName="solucion" targetName="gtest" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -14,15 +14,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="237e323e-2a36-4c36-8670-3d7840bf6186" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RRTP2.pdf" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/correrTests.dir/src/Driver.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/correrTests.dir/src/Driver.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/correrTests.dir/tests/test_calculadora.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/correrTests.dir/tests/test_calculadora.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/correrTests.dir/tests/test_diccTrie.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/correrTests.dir/tests/test_diccTrie.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/correrTests.dir/tests/test_driver.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/correrTests.dir/tests/test_driver.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/correrTests" afterPath="$PROJECT_DIR$/cmake-build-debug/correrTests" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/diccTrie.h" afterPath="$PROJECT_DIR$/src/diccTrie.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/diccTrie.hpp" afterPath="$PROJECT_DIR$/src/diccTrie.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_calculadora.cpp" afterPath="$PROJECT_DIR$/tests/test_calculadora.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_diccTrie.cpp" afterPath="$PROJECT_DIR$/tests/test_diccTrie.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/tests/google-test/CMakeFiles/" />
@@ -38,7 +38,7 @@
       <file leaf-file-name="Calculadora.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Calculadora.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
+            <state relative-caret-position="1548">
               <caret line="86" column="19" lean-forward="false" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="19" />
               <folding />
             </state>
@@ -55,41 +55,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_programa.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_programa.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1224">
-              <caret line="68" column="1" lean-forward="false" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_diccTrie.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_diccTrie.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="23" column="15" lean-forward="false" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="diccTrie.hpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="diccTrie.hpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/diccTrie.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="74" column="47" lean-forward="false" selection-start-line="74" selection-start-column="47" selection-end-line="74" selection-end-column="47" />
+            <state relative-caret-position="248">
+              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="diccTrie.h" pinned="false" current-in-tab="false">
+      <file leaf-file-name="diccTrie.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/diccTrie.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1350">
-              <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+            <state relative-caret-position="351">
+              <caret line="51" column="15" lean-forward="false" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -98,18 +78,8 @@
       <file leaf-file-name="Programa.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Programa.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="846">
-              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_calculadora.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_calculadora.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="116" column="18" lean-forward="true" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
+            <state relative-caret-position="198">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -140,7 +110,6 @@
         <option value="$PROJECT_DIR$/src/Driver.cpp" />
         <option value="$PROJECT_DIR$/tests/test_driver.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/src/diccTrie.h" />
         <option value="$PROJECT_DIR$/src/Programa.h" />
         <option value="$PROJECT_DIR$/src/Calculadora.cpp" />
         <option value="$PROJECT_DIR$/src/Calculadora.h" />
@@ -149,6 +118,7 @@
         <option value="$PROJECT_DIR$/tests/test_diccTrie.cpp" />
         <option value="$PROJECT_DIR$/tests/test_calculadora.cpp" />
         <option value="$PROJECT_DIR$/src/diccTrie.hpp" />
+        <option value="$PROJECT_DIR$/src/diccTrie.h" />
       </list>
     </option>
   </component>
@@ -283,7 +253,9 @@
       <workItem from="1531229663192" duration="18060000" />
       <workItem from="1531255473740" duration="77000" />
       <workItem from="1531333034488" duration="976000" />
-      <workItem from="1531334034555" duration="352000" />
+      <workItem from="1531334034555" duration="593000" />
+      <workItem from="1531354059973" duration="298000" />
+      <workItem from="1531354433714" duration="1212000" />
     </task>
     <task id="LOCAL-00001" summary="Error busquedabinaria valorhistoricovariable">
       <created>1531167913986</created>
@@ -369,47 +341,53 @@
       <option name="project" value="LOCAL" />
       <updated>1531255531000</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Agrego test">
+      <created>1531334468352</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1531334468352</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="correrTests - 2018.07.10 at 17h 43m 26s.xml">
-      <configuration name="correrTests" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="correrTests - 2018.07.11 at 15h 18m 42s.xml">
-      <configuration name="correrTests" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="correrTests - 2018.07.11 at 15h 24m 14s.xml">
-      <configuration name="correrTests" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="correrTests - 2018.07.11 at 15h 26m 43s.xml">
-      <configuration name="correrTests" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="correrTests - 2018.07.11 at 15h 27m 54s.xml">
-      <configuration name="correrTests" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="correrTests - 2018.07.11 at 15h 28m 03s.xml">
-      <configuration name="correrTests" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="correrTests - 2018.07.11 at 15h 31m 34s.xml">
-      <configuration name="correrTests" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="correrTests - 2018.07.11 at 15h 32m 12s.xml">
-      <configuration name="correrTests" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="correrTests - 2018.07.11 at 15h 34m 57s.xml">
-      <configuration name="correrTests" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
     <history-entry file="correrTests - 2018.07.11 at 15h 37m 33s.xml">
+      <configuration name="correrTests" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="correrTests - 2018.07.11 at 21h 10m 22s.xml">
+      <configuration name="correrTests" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="correrTests - 2018.07.11 at 21h 15m 20s.xml">
+      <configuration name="correrTests" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="correrTests - 2018.07.11 at 21h 21m 47s.xml">
+      <configuration name="correrTests" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="correrTests - 2018.07.11 at 21h 22m 31s.xml">
+      <configuration name="correrTests" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="correrTests - 2018.07.11 at 21h 23m 22s.xml">
+      <configuration name="correrTests" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="correrTests - 2018.07.11 at 21h 24m 12s.xml">
+      <configuration name="correrTests" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="correrTests - 2018.07.11 at 21h 24m 34s.xml">
+      <configuration name="correrTests" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="correrTests - 2018.07.11 at 21h 29m 31s.xml">
+      <configuration name="correrTests" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="correrTests - 2018.07.11 at 21h 32m 00s.xml">
       <configuration name="correrTests" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57932000" />
+    <option name="totallyTimeSpent" value="59683000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="24" width="1313" height="780" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24790236" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -417,7 +395,7 @@
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34084085" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34084085" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -445,7 +423,8 @@
     <MESSAGE value="Falta que pase el test de estres" />
     <MESSAGE value="Corre todos los test" />
     <MESSAGE value="Corre todos los test, no pierde memoria" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corre todos los test, no pierde memoria" />
+    <MESSAGE value="Agrego test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Agrego test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -520,7 +499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2106">
           <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -711,7 +689,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -729,26 +706,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Calculadora.h">
+    <entry file="file://$PROJECT_DIR$/src/Calculadora.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="41" column="4" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Programa.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Programa.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        <state relative-caret-position="1548">
+          <caret line="86" column="19" lean-forward="false" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -757,14 +718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1224">
           <caret line="68" column="1" lean-forward="false" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/diccTrie.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -779,24 +732,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_calculadora.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="116" column="18" lean-forward="true" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
+        <state relative-caret-position="2088">
+          <caret line="116" column="18" lean-forward="false" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Calculadora.cpp">
+    <entry file="file://$PROJECT_DIR$/src/Calculadora.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="86" column="19" lean-forward="false" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="19" />
+        <state relative-caret-position="738">
+          <caret line="41" column="4" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Programa.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Programa.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/diccTrie.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="74" column="47" lean-forward="false" selection-start-line="74" selection-start-column="47" selection-end-line="74" selection-end-column="47" />
+        <state relative-caret-position="248">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diccTrie.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="51" column="15" lean-forward="false" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
           <folding />
         </state>
       </provider>
